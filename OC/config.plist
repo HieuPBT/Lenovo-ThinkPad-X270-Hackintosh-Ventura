@@ -274,10 +274,16 @@
 
 </key>
 			<dict>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAWGQ==</data>
+				<data>AAAbWQ==</data>
 				<key>device-id</key>
-				<data>AhkAAA==</data>
+				<data>FlkAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
@@ -1160,7 +1166,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -1170,7 +1176,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<false/>
+			<true/>
 			<key>DisableIoMapperMapping</key>
 			<false/>
 			<key>DisableLinkeditJettison</key>
@@ -1192,9 +1198,9 @@
 			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
-			<false/>
+			<true/>
 			<key>PowerTimeoutKernelPanic</key>
-			<false/>
+			<true/>
 			<key>ProvideCurrentCpuInfo</key>
 			<false/>
 			<key>SetApfsTrimTimeout</key>
@@ -1256,11 +1262,11 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
-			<false/>
+			<true/>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -1270,7 +1276,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1296,7 +1302,7 @@
 		<key>Security</key>
 		<dict>
 			<key>AllowSetDefault</key>
-			<false/>
+			<true/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -1316,11 +1322,11 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>17760515</integer>
+			<integer>0</integer>
 			<key>SecureBootModel</key>
 			<string>Default</string>
 			<key>Vault</key>
-			<string>Secure</string>
+			<string>Optional</string>
 		</dict>
 		<key>Serial</key>
 		<dict>
@@ -1670,7 +1676,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>AAAAAA==</data>
+				<data>v7+/AA==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -1686,11 +1692,11 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1</string>
+				<string>-v keepsyms=1 alcid=0x100103</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
-				<data>cnUtUlU6MjUy</data>
+				<string>en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -1757,23 +1763,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>M0000000000000001</string>
+			<string>C02702100QXHWVPA8</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>ESIzRFVm</data>
+			<data>2J4/euE7</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
-			<string>W00000000001</string>
+			<string>C02T3HZFHV29</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>B20D3A9B-0188-44DB-8A9A-BBC5CAEBE221</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1782,7 +1788,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -1799,9 +1805,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -2028,7 +2034,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
+			<true/>
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
