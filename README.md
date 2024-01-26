@@ -1,4 +1,4 @@
-<h1 align="center">Hackintosh For Lenovo ThinkPad X270</h1>
+<h1 align="center">Lenovo ThinkPad X270 Hackintosh Ventura</h1>
 <p align="center">
     <a href="https://www.apple.com/macos/">
         <img src="https://img.shields.io/badge/Ventura-13.6.4-orange.svg?logo=apple"/></a>
@@ -7,11 +7,17 @@
     <a href="https://github.com/acidanthera/OpenCorePkg">
         <img src="https://img.shields.io/badge/OpenCore-0.9.7-blue"></a>
 
-![image](Images/Specs.png)
+![X270](Images/ThinkPad_X270_Ventura.jpg)
 
 ## Warning ⚠️
 
-<b>I am not responsible for any damages you may cause.
+<b>You should follow <a href="https://dortania.github.io/OpenCore-Install-Guide/"> Dortania Guides </a> for deeply understand.</b>
+<br>
+<b>You need to fill your own SMBIOS using this <a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html#platforminfo">guide</a></b>
+<br>
+<b>I am not responsible for any damages you may cause.</b>
+
+![info](Images/specs.png)
 
 ## Specs
 - <b>Model</b>: Thinkpad X270
@@ -25,11 +31,18 @@
 
 ## Bios settings
 
+<b>Config</b>
+- `USB -> Always on USB` **Disabled**
+
 <b>Security</b>
 - `Security Chip` **Disabled**
 - `Memory Protection -> Execution Prevention` **Enabled**
 - `Virtualization -> Intel Virtualization Technology` **Enabled**
 - `Virtualization -> Intel VT-d Feature` **Enabled**
+- `I/O Port Access -> Wireless WAN` **Disabled**
+- `I/O Port Access -> Memory Card Slot` **Disabled**
+- `I/O Port Access -> Fingerprint Reader` **Disabled**
+- `I/O Port Access -> WiGig` **Disabled**
 - `Anti-Theft -> Computrace -> Current Setting` **Disabled**
 - `Secure Boot -> Secure Boot` **Disabled**
 - `Intel SGX -> Intel SGX Control` **Disabled**
@@ -39,40 +52,52 @@
 - `UEFI/Legacy Boot` **UEFI Only**
 - `CSM Support` **No**
 
-## Features
+## Status
 <details>
 <summary><b> What's working? ✅ </summary>
 <br>
 
-| Feature                                | Status | Description          |
-| :------------------------------------- | ------ | ------------------- |
-| CPU Power Management                   | ✅   | Good |
-| Graphics Acceleration                  | ✅   | Good |
-| Battery                                | ✅   | Supports dual batteries |
-| Internal Camera                        | ✅   | Good |
-| All USB Ports                          | ✅   | No DP on Type C port |
-| HDMI Port                              | ✅   | Including HDMI Audio |
-| Ethernet Port                          | ✅   | Good |
-| Wifi                                   | ✅   | Wifi 6E |
-| Bluetooth                              | ✅   | Good |
-| TouchPad                               | ✅   | Including gestures and click |
-| TrackPoint                             | ✅   | Good |
-| Keyboard                               | ✅   | Including all Fn keys |
-| Sleep                                  | ✅   | Good |
-| Shutdown/Reboot                        | ✅   | Good |
+| Feature                                | Description          |
+| :------------------------------------- | -------------------    |
+| CPU Power Management                   | Good |    
+| Graphics Acceleration                  | Good |
+| Battery                                | Supports dual batteries |
+| Internal Camera                        | Good |
+| All USB Ports                          | No DP on Type C port |
+| HDMI Port                              | Including HDMI Audio |
+| Ethernet Port                          | Good |
+| Wifi/Bluetooth                         | Wifi 6E |
+| TouchPad/TrackPoint                    | Including gestures and click |
+| Keyboard                               | Including all `Fn` keys |
+| Sleep                                  | Good |
+| Shutdown/Reboot                        | Good |
 </details>
 
 <details>
 <summary><b> What's not working❗</summary>
 <br>
 
-| Feature                              | Status | Description          |
-| :----------------------------------- | ------ | -------------------- |
-| Fingerprint Reader                   | ❌     | Not Supported |
-| SD card Reader                       | ⛔     | Untest |
-| Wireless WAN                         | ❌     | Not Supported|
-| AirDrop                              | ❌     | Need Apple compatible Wifi/Bluetooth card|   
-| DRM                                  | ❌     | iGPU is not supported, use browsers instead|  
-| Audio Jack                           | ❌     | Buzzing Sound|   
+| Feature                              | Description          |
+| :----------------------------------- | -------------------- |
+| Fingerprint Reader                   | Not Supported, `Disabled` in BIOS |
+| Wireless WAN                         | Not Supported, `Disabled` in BIOS|
+| AirDrop                              | Need Apple compatible Wifi/Bluetooth card|   
+| DRM                                  | iGPU is not supported, use browsers instead|  
+| Audio Jack                           | Buzzing Sound|   
+</details>
+
+<details>
+<summary><b> Not tested 🔄</summary>
+<br>
+
+| Feature                               | Description          |
+| :-----------------------------------  | -------------------- |
+| SD card Reader                        | `Disabled` in BIOS |
+| iServices                             | Need `Valid` Serial |
 
 </details>
+
+## Credits
+- [Apple](https://apple.com) for MacOS.
+- [Acidanthera](https://github.com/acidanthera) for their hackintosh work.
+- [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) for great and detailed guides.

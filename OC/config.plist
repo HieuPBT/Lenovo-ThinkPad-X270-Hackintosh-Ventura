@@ -10,46 +10,6 @@
 	<string>In most cases recommended to use Sample.plist</string>
 	<key>#WARNING - 4</key>
 	<string>Use SampleCustom.plist only for special cases.</string>
-	<key>PlatformInfo</key>
-	<dict>
-		<key>Automatic</key>
-		<true/>
-		<key>CustomMemory</key>
-		<false/>
-		<key>Generic</key>
-		<dict>
-			<key>AdviseFeatures</key>
-			<false/>
-			<key>MLB</key>
-			<string>C02702100QXHWVPA8</string>
-			<key>MaxBIOSVersion</key>
-			<false/>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>ROM</key>
-			<data>2J4/euE7</data>
-			<key>SpoofVendor</key>
-			<true/>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
-			<key>SystemProductName</key>
-			<string>MacBookPro14,1</string>
-			<key>SystemSerialNumber</key>
-			<string>C02T3HZFHV29</string>
-			<key>SystemUUID</key>
-			<string>B20D3A9B-0188-44DB-8A9A-BBC5CAEBE221</string>
-		</dict>
-		<key>UpdateDataHub</key>
-		<true/>
-		<key>UpdateNVRAM</key>
-		<true/>
-		<key>UpdateSMBIOS</key>
-		<true/>
-		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
-		<key>UseRawUuidEncoding</key>
-		<false/>
-	</dict>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -480,6 +440,46 @@
 			<key>SyncRuntimePermissions</key>
 			<false/>
 		</dict>
+	</dict>
+	<key>PlatformInfo</key>
+	<dict>
+		<key>Automatic</key>
+		<true/>
+		<key>CustomMemory</key>
+		<false/>
+		<key>Generic</key>
+		<dict>
+			<key>AdviseFeatures</key>
+			<false/>
+			<key>MLB</key>
+			<string></string>
+			<key>MaxBIOSVersion</key>
+			<false/>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>ROM</key>
+			<data></data>
+			<key>SpoofVendor</key>
+			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
+			<key>SystemProductName</key>
+			<string>MacBookPro14,1</string>
+			<key>SystemSerialNumber</key>
+			<string></string>
+			<key>SystemUUID</key>
+			<string></string>
+		</dict>
+		<key>UpdateDataHub</key>
+		<true/>
+		<key>UpdateNVRAM</key>
+		<true/>
+		<key>UpdateSMBIOS</key>
+		<true/>
+		<key>UpdateSMBIOSMode</key>
+		<string>Custom</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
