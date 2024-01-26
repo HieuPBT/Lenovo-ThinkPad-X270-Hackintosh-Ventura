@@ -17,7 +17,7 @@
 <br>
 <b>I am not responsible for any damages you may cause.</b>
 
-![info](Images/specs.png)
+![info](Images/Specs.png)
 
 ## Specs
 - <b>Model</b>: Thinkpad X270
