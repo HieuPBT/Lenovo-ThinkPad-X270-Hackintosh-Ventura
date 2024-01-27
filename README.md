@@ -63,7 +63,7 @@
 | Graphics Acceleration                  | Good |
 | Battery                                | Supports dual batteries |
 | Internal Camera                        | Good |
-| All USB Ports                          | No DP on Type C port |
+| All USB Ports                          | Good |
 | HDMI Port                              | Including HDMI Audio |
 | Ethernet Port                          | Good |
 | Wifi/Bluetooth                         | Wifi 6E |
